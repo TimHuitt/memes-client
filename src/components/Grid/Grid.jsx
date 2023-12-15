@@ -7,11 +7,17 @@ const Grid = ({ memes, noSave, isEdit }) => {
   
   return (
     <div className="Grid">
-      <Link to={link}>
-        {memes.map((meme, index) => (
-          <Image key={"images-"+index} meme={meme} index={index} noSave={!noSave}/>
-        ))}
-      </Link>
+      {memes.map((meme, index) => (
+        <Link to={link} state={{meme}}>
+          <Image 
+            key={"images-"+index} 
+            meme={meme} 
+            index={index} 
+            noSave={!noSave} 
+            url={meme.url} 
+          />
+        </Link>
+      ))}
     </div>
   );
 }

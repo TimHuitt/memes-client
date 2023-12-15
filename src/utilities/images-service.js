@@ -8,3 +8,11 @@ export const getImages = async () => {
     console.log(err.message)
   }
 }
+export const getTemplates = async () => {
+  try {
+    const data = await imagesAPI.templateIndex()
+    return data
+  } catch (err) {
+    console.log(err.message)
+  }
+}
