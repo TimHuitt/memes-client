@@ -29,7 +29,6 @@ const Home = () => {
     <div className="Home page">
       <Header />
       <Grid memes={images} isEdit={false}/>
-      Browse
     </div>
   )
 }
