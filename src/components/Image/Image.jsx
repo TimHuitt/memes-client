@@ -1,7 +1,6 @@
 import './Image.css';
 
 const Image = ({ meme, index, noSave }) => {
-  console.log(noSave)
   return (
     <div key={index} className="grid-item">
       <div className="image-container">
