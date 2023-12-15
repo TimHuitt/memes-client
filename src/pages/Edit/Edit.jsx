@@ -1,5 +1,6 @@
 import Bar from '../../components/Bar/Bar'
 import Header from '../../components/Header/Header'
+import { saveImage } from '../../utilities/images-service'
 import { useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import html2canvas from 'html2canvas'
@@ -10,10 +11,11 @@ const Edit = () => {
 
   const handleExport = async () => {
     try {
-      const imageElement = document.querySelector('.image-container')
+      const imageElement = document.querySelector('.html-image')
       const canvas = await html2canvas(imageElement)
       const image = canvas.toDataURL('image/png')
-      await saveImage(image)
+      console.log(image)
+      await saveImage({imageUpload: image})
     } catch (err) {
       console.log(err)
     }

@@ -8,6 +8,7 @@ export const getImages = async () => {
     console.log(err.message)
   }
 }
+
 export const getTemplates = async () => {
   try {
     const data = await imagesAPI.templateIndex()
@@ -16,6 +17,7 @@ export const getTemplates = async () => {
     console.log(err.message)
   }
 }
+
 export const saveImage = async (image) => {
   try {
     const data = await imagesAPI.saveImage(image)
