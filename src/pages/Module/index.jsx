@@ -5,7 +5,7 @@ const Module = () => {
 
     return (
       <div>
-        Cool!
+        Very Cool!
       </div>
     );
 }
