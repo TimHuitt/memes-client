@@ -16,3 +16,11 @@ export const getTemplates = async () => {
     console.log(err.message)
   }
 }
+export const saveImage = async (image) => {
+  try {
+    const data = await imagesAPI.saveImage(image)
+    return data
+  } catch (err) {
+    console.log(err.message)
+  }
+}

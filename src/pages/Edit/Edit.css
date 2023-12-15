@@ -1,3 +1,19 @@
 .Edit img {
-  max-height: 90vmin;
+  max-height: 60vmin;
+}
+.html-image {
+  position: relative;
+}
+.Edit h1 {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-shadow: 
+    1px 1px 0 #000,  
+    -1px -1px 0 #000, 
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
 }
