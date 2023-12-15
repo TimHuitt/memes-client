@@ -28,7 +28,7 @@ const Edit = () => {
   return (
     <div className="Edit page">
       <Header />
-      <Bar caption={caption} setCaption={setCaption} text='Enter Caption Here' search="Add Caption"/>
+      <Bar caption={caption} setCaption={setCaption} text='Enter Caption Here' search=""/>
       <div className="html-image">
         <img src={meme.url} />
         <h1>{caption}</h1>
