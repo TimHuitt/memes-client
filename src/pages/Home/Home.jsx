@@ -6,7 +6,7 @@ import { getImages } from '../../utilities/images-service.js'
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true)
-  const [ images, setImages ] = useState('');
+  const [ images, setImages ] = useState([]);
 
   const handleRequest = async () => {
     try {
@@ -35,3 +35,4 @@ const Home = () => {
 }
 
 export default Home
+
