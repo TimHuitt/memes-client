@@ -17,7 +17,7 @@ const Image = ({ meme, index, noSave, isEdit }) => {
       <div className="image-container">
         <img src={meme.url} alt={meme.alt} />
         <p>{meme.description}</p>
-        <button className="save-button">Add Caption</button>
+        {noSave && <button className="save-button">Add Caption</button>}
       </div>
     </div>
   );

@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <div className="Home page">
       <Header />
-      <Grid memes={images}/>
+      <Grid memes={images} isEdit={false}/>
       Browse
     </div>
   )

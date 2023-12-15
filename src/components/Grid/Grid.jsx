@@ -13,7 +13,7 @@ const Grid = ({ memes, noSave, isEdit }) => {
             key={"images-"+index} 
             meme={meme} 
             index={index} 
-            noSave={!noSave} 
+            noSave={noSave} 
             url={meme.url} 
           />
         </Link>

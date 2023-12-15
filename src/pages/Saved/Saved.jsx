@@ -6,7 +6,7 @@ const Saved = () => {
   return (
     <div className="Saved page">
       <Header />
-      <Grid memes={images} noSave={true} />
+      <Grid memes={images} noSave={false} />
     </div>
   )
 }
