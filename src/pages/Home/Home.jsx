@@ -1,11 +1,12 @@
 import Header from '../../components/Header/Header'
 import Grid from '../../components/Grid/Grid'
+import images from '../../../public/images.js'
 
 const Home = () => {
   return (
     <div className="Home page">
       <Header />
-      <Grid />
+      <Grid memes={images}/>
       Browse
     </div>
   )
