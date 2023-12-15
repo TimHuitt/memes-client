@@ -1,7 +1,10 @@
-const Bar = () => {
+import './Bar.css'
+
+const Bar = ({ text, search }) => {
   return (
     <div className="Bar">
-      Bar
+      <input type="text" placeholder={text} />
+      <input type="submit" value={search} />
     </div>
   )
 }
