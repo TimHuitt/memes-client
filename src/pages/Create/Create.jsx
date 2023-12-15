@@ -1,6 +1,9 @@
+import Header from '../../components/Header/Header'
+
 const Create = () => {
   return (
-    <div className="Create">
+    <div className="Create page">
+      <Header />
       Create
     </div>
   )

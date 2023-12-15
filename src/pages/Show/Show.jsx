@@ -1,6 +1,6 @@
 const Show = () => {
   return (
-    <div className="Show">
+    <div className="Show page">
       Show
     </div>
   )

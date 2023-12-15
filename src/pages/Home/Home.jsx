@@ -1,8 +1,9 @@
 import Header from '../../components/Header/Header'
 const Home = () => {
   return (
-    <div className="Home">
+    <div className="Home page">
       <Header />
+      Browse
     </div>
   )
 }
